@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+*{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.container-tugas11{
+  text-align: center;
+}
+
+table.tugas11{
+    text-align:center; 
+    margin-left:auto; 
+    margin-right:auto; 
+    width:50%;
+    border: 1px solid black;
+}
+
+table.tugas11 thead{
+  background-color: #aaaaaa;
+  font-weight: bold;
+}
+
+table.tugas11 tbody{
+  background-color: #ff7f50;
+  text-align: left;
+}
