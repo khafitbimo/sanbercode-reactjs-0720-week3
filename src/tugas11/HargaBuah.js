@@ -1,13 +1,17 @@
 import React from 'react';
 
 class BuahRow extends React.Component{
+    constructor(props){
+        super(props)
+    }
+
     render(){
         return(
             <>
                 <tr>
-                    <td>{this.props.nama}</td>
-                    <td>{this.props.harga}</td>
-                    <td>{this.props.berat}</td>
+                    <td>{this.props.item.nama}</td>
+                    <td>{this.props.item.harga}</td>
+                    <td>{this.props.item.berat / 1000 } Kg</td>
                 </tr>
             </>
         )
@@ -40,9 +44,9 @@ class HargaBuah extends React.Component{
                         <tbody>
 
                    
-                {dataHargaBuah.map(buah=>{
+                {dataHargaBuah.map((buah,index)=>{
                     return(
-                        <BuahRow nama={buah.nama} harga={buah.harga} berat={`${buah.berat / 1000} kg`}  />
+                        <BuahRow item={buah} key={index}  />
                     )
                 })}
                     </tbody>

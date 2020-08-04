@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import HargaBuah from './tugas11/HargaBuah';
+import CountDown from './tugas12/CountDown';
 
 function App() {
   return (
     <div>
       <HargaBuah />
+      <CountDown countStart={10}/>
     </div>
   );
 }
