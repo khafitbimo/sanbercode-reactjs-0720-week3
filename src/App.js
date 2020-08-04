@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <HargaBuah />
-      <CountDown countStart={10}/>
+      <CountDown countStart={100}/>
     </div>
   );
 }
