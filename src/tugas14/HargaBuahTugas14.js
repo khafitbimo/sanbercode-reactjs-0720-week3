@@ -67,29 +67,29 @@ const HargaBuah = () => {
 
       const handleSubmit = (event) => {
         event.preventDefault()
-        let nama = inputNama
-        let harga = parseInt(inputHarga)
-        let berat = parseInt(inputBerat)
+        let name = inputNama
+        let price = parseInt(inputHarga)
+        let weight = parseInt(inputBerat)
 
 
-        if (nama.replace(/\s/g,'') === '') {
+        if (name.replace(/\s/g,'') === '') {
             return
         }
 
         if (statusForm === 'create') {
-            axios.post(`http://backendexample.sanbercloud.com/api/fruits`,{name: nama,price: harga,weight: berat})
+            axios.post(`http://backendexample.sanbercloud.com/api/fruits`,{name,price,weight})
             .then(res => {
                 setDaftarBuah([...daftarBuah,{id: res.data.id,nama: res.data.name,harga: res.data.price,berat: res.data.weight}])
             }).catch(error => {
                 console.log(error)
             })
         } else {
-            axios.put(`http://backendexample.sanbercloud.com/api/fruits/${selectedId}`,{name: nama,price: harga,weight: berat})
+            axios.put(`http://backendexample.sanbercloud.com/api/fruits/${selectedId}`,{name,price,weight})
             .then(res => {
                 let selectBuah = daftarBuah.find(el => el.id === selectedId)
-                selectBuah.nama = nama
-                selectBuah.harga = harga
-                selectBuah.berat = berat
+                selectBuah.nama = name
+                selectBuah.harga = price
+                selectBuah.berat = weight
                 setDaftarBuah([...daftarBuah])
 
             }).catch(error => {
