@@ -1,8 +1,7 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter as Router} from 'react-router-dom'
-import Routes from './materiHari15/Routes'
-import HargaBuah from './tugas14/HargaBuahTugas14';
+import Routes from './tugas15/Routes'
 
 
 

@@ -41,6 +41,101 @@
   font-family: 'Times New Roman', Times, serif;
 }
 
+body{
+  background-image: url('img/pattern.jpg');
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.logo{
+  content:url('img/logo.png')
+}
+
+header{
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  vertical-align: middle;
+}
+
+header.light{
+  background-color:white;
+}
+
+header.dark{
+  background-color:black;
+}
+
+
+
+header img{
+  float: left;
+  position: relative;
+}
+
+.button-theme{
+  position: relative;
+  margin: 15px 50px;
+}
+
+header nav{
+  float: right;
+  position: relative;
+}
+
+.navbar{
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: grey;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+background: #ddd;
+color: black;
+}
+
+footer{
+  overflow: hidden;
+  background-color:black;
+  color: white;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+header nav ul a{
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  position: relative;
+}
+
+
+
+section{
+  padding: 50px;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 .container-tugas11{
   text-align: center;
 }
@@ -117,6 +212,10 @@ input[type="text"]{
   padding: 20px 0px;
   width: 50%;
   border: 1px solid black;
+}
+
+.title{
+  text-align: center;
 }
 
 
