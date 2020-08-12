@@ -5,10 +5,15 @@ import {HeaderContext} from "./HeaderContext"
 const HeaderElement = () =>{
     const [darkTheme,setDarkTheme] = useState(HeaderContext);
 
+    const handleClick = (event) => {
+        setDarkTheme(!darkTheme);
+        console.log(darkTheme);
+    }
+
     return(
         <>
         <header className={`${darkTheme ? "dark":"light"}`}>
-        <button className="button-theme" onClick={()=>setDarkTheme(!darkTheme)}>Dark Bar : {`${darkTheme ? "Active":"Non-Active"}`}</button>
+        <button className="button-theme" onClick={handleClick}>Dark Bar : {`${darkTheme ? "Active":"Non-Active"}`}</button>
             <img id="logo" width="200px" className="logo"/>
             <nav>
                 <div className="navbar">

@@ -28,7 +28,7 @@ class HargaBuah extends React.Component{
     constructor(props){
         super(props)
         this.state={
-            daftarBuah : this.props.daftarBuah,
+            daftarBuah : [],
             inputNama : "",
             inputHarga: 0,
             inputBerat: 0,
